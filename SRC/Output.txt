@@ -1,10 +1,24 @@
-bastar, to be enough (basto bastas basta bastamos bastáis bastan)
-confundir, to confuse (confundo confundes confunde confundimos confundís confunden)
-dejar, to leave (dejo dejas deja dejamos dejáis dejan)
-durar, to last (duro duras dura duramos duráis duran)
-esconder, to hide (escondo escondes esconde escondemos escondéis esconden)
-fingir, to pretend (finjo finges finge fingimos fingís fingen)
-mentir, to lie (miento mientes miente mentimos mentís mienten)
-mezclar, to mix (mezclo mezclas mezcla mezclamos mezcláis mezclan)
-probar, to try (pruebo pruebas prueba probamos probáis prueban)
-sonar, to ring (sueno suenas suena sonamos sonáis suenan)
+submissive, agachado  
+None, alunisono  
+to pile up, amontonarse (me amontono te amontonas se amontona nos amontonamos os amontonáis se amontonan)
+predicament, aprieto  
+to stammer, balbucear (balbuceo balbuceas balbucea balbuceamos balbuceáis balbucean)
+to boil, bullir (bullo bulles bulle bullimos bullís bullen)
+heavyset, corpulento  
+to weaken, debilitar (debilito debilitas debilita debilitamos debilitáis debilitan)
+to hide, disimular (disimulo disimulas disimula disimulamos disimuláis disimulan)
+to rehearse, ensayar (ensayo ensayas ensaya ensayamos ensayáis ensayan)
+to scrutinize, escudriñar (escudriño escudriñas escudriña escudriñamos escudriñáis escudriñan)
+wad, fajo  
+to pretend, fingir (finjo finges finge fingimos fingís fingen)
+shred, jirón  
+bite, mordida  
+face, mueca  
+optional, optativo  
+to swarm, pulular (pululo pululas pulula pululamos pululáis pululan)
+corner of one's eye, rabillo del ojo  
+to travel around, recorrer (recorro recorres recorre recorremos recorréis recorren)
+to whisper, susurrar (susurro susurras susurra susurramos susurráis susurran)
+wobbly, tambaleante  
+to hum, tararear (tarareo tarareas tararea tarareamos tarareáis tararean)
+to run into, toparse (me topo te topas se topa nos topamos os topáis se topan)
