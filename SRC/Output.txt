@@ -1,24 +1,24 @@
-submissive	agachado  
-None	alunisono  
-to pile up	amontonarse (me amontono te amontonas se amontona nos amontonamos os amontonáis se amontonan)
-predicament	aprieto  
-to stammer	balbucear (balbuceo balbuceas balbucea balbuceamos balbuceáis balbucean)
-to boil	bullir (bullo bulles bulle bullimos bullís bullen)
-heavyset	corpulento  
-to weaken	debilitar (debilito debilitas debilita debilitamos debilitáis debilitan)
-to hide	disimular (disimulo disimulas disimula disimulamos disimuláis disimulan)
-to rehearse	ensayar (ensayo ensayas ensaya ensayamos ensayáis ensayan)
-to scrutinize	escudriñar (escudriño escudriñas escudriña escudriñamos escudriñáis escudriñan)
-wad	fajo  
-to pretend	fingir (finjo finges finge fingimos fingís fingen)
-shred	jirón  
-bite	mordida  
-face	mueca  
-optional	optativo  
-to swarm	pulular (pululo pululas pulula pululamos pululáis pululan)
-corner of one's eye	rabillo del ojo  
-to travel around	recorrer (recorro recorres recorre recorremos recorréis recorren)
-to whisper	susurrar (susurro susurras susurra susurramos susurráis susurran)
-wobbly	tambaleante  
-to hum	tararear (tarareo tarareas tararea tarareamos tarareáis tararean)
-to run into	toparse (me topo te topas se topa nos topamos os topáis se topan)
+Submissive	Agachado  
+>>>manually check defination on https://www.spanishdict.com/translate/al%20unisono please.<<<	Alunisono  
+To pile up	Amontonarse (me amontono, te amontonas, se amontona, nos amontonamos, os amontonáis, se amontonan)
+Predicament	Aprieto  
+To stammer	Balbucear (balbuceo, balbuceas, balbucea, balbuceamos, balbuceáis, balbucean)
+To boil	Bullir (bullo, bulles, bulle, bullimos, bullís, bullen)
+Heavyset	Corpulento  
+To weaken	Debilitar (debilito, debilitas, debilita, debilitamos, debilitáis, debilitan)
+To hide	Disimular (disimulo, disimulas, disimula, disimulamos, disimuláis, disimulan)
+To rehearse	Ensayar (ensayo, ensayas, ensaya, ensayamos, ensayáis, ensayan)
+To scrutinize	Escudriñar (escudriño, escudriñas, escudriña, escudriñamos, escudriñáis, escudriñan)
+Wad	Fajo  
+To pretend	Fingir (finjo, finges, finge, fingimos, fingís, fingen)
+Shred	Jirón  
+Bite	Mordida  
+Face	Mueca  
+Optional	Optativo  
+To swarm	Pulular (pululo, pululas, pulula, pululamos, pululáis, pululan)
+Corner of one's eye	Rabillo del ojo  
+To travel around	Recorrer (recorro, recorres, recorre, recorremos, recorréis, recorren)
+To whisper	Susurrar (susurro, susurras, susurra, susurramos, susurráis, susurran)
+Wobbly	Tambaleante  
+To hum	Tararear (tarareo, tarareas, tararea, tarareamos, tarareáis, tararean)
+To run into	Toparse (me topo, te topas, se topa, nos topamos, os topáis, se topan)

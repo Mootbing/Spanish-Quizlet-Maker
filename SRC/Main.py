@@ -17,6 +17,7 @@ with open(os.path.dirname(os.path.realpath(__file__)) + "/Input.txt", "r") as Fi
 
 for Word in Words:
 
+    #Which link to use; If verb use conjugate
     LinkBase = LinkDef
     if Word.startswith("v "):
         LinkBase = LinkConj
@@ -24,21 +25,21 @@ for Word in Words:
     URL = f"{LinkBase}{'%20'.join(Word.split(' ')[1:]).lower()}"
     Word = "".join(Word.split(" ")[1:])
 
+    #bs4 bs
     URLResult = requests.get(URL)
     Soup = BeautifulSoup(URLResult.content, "html.parser")
 
     print(f"{URL.lower()}")
 
-    #get good word from website with accent
+    #Get correct word from site with accents and tildes
     CorrectedWord = Soup.find("h1", attrs={"class":"cXUN5-ST"})
 
     if CorrectedWord is not None:
         Word = re.sub("""(<.*">)|(</.*>)""", "", str(CorrectedWord))
 
+    #Get conjugation of verbs
     Conjugations = [[[] for _ in range(5)] for _ in range(6)]
-
     i = 0
-    
     for Conjugation in Soup.find_all("a", attrs={"class":"_3Le9u96E _2cyjHi0d _1zVoo-wU y9F9itDZ"}):
 
         RidFront = re.sub('''<a.*aria-label="''', "", str(Conjugation))
@@ -49,12 +50,16 @@ for Word in Words:
             Conjugations[albreto.floor(i / 30)][i % 5].append(RidBack)
             #change 30 and 5 for others ">
 
+    #Get defination
     Defination = Soup.find("div", attrs={"id":"quickdef1-es"})
     Defination = re.sub('''<div.*">''', "", str(Defination))
     Defination = re.sub('''</.*>''', "", str(Defination))
 
+    if Defination == "None":
+        Defination = f">>>Manually check defination on {URL} please.<<<"
+
     with open(os.path.dirname(os.path.realpath(__file__)) + "/Output.txt", "a", encoding="UTF-8") as File:
         
-        CondensedConj = f"({' '.join(Conjugations[0][1])})" if Conjugations[0][1] != [] else " "
+        CondensedConj = f"({', '.join(Conjugations[0][1])})" if Conjugations[0][1] != [] else " "
         
-        File.write(f"{Defination}\t{Word} {CondensedConj}\n") #flip def and word so spanish is with spanish
+        File.write(f"{Defination.capitalize()}\t{Word.capitalize()} {CondensedConj}\n") #flip def and word so spanish is with spanish
