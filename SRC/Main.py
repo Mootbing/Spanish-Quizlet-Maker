@@ -57,4 +57,4 @@ for Word in Words:
         
         CondensedConj = f"({' '.join(Conjugations[0][1])})" if Conjugations[0][1] != [] else " "
         
-        File.write(f"{Defination}, {Word} {CondensedConj}\n") #flip def and word so spanish is with spanish
+        File.write(f"{Defination}\t{Word} {CondensedConj}\n") #flip def and word so spanish is with spanish
