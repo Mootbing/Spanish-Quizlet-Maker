@@ -1,24 +1,24 @@
-Submissive	Agachado  
->>>manually check defination on https://www.spanishdict.com/translate/al%20unisono please.<<<	Alunisono  
-To pile up	Amontonarse (me amontono, te amontonas, se amontona, nos amontonamos, os amontonáis, se amontonan)
-Predicament	Aprieto  
-To stammer	Balbucear (balbuceo, balbuceas, balbucea, balbuceamos, balbuceáis, balbucean)
-To boil	Bullir (bullo, bulles, bulle, bullimos, bullís, bullen)
-Heavyset	Corpulento  
-To weaken	Debilitar (debilito, debilitas, debilita, debilitamos, debilitáis, debilitan)
-To hide	Disimular (disimulo, disimulas, disimula, disimulamos, disimuláis, disimulan)
-To rehearse	Ensayar (ensayo, ensayas, ensaya, ensayamos, ensayáis, ensayan)
-To scrutinize	Escudriñar (escudriño, escudriñas, escudriña, escudriñamos, escudriñáis, escudriñan)
-Wad	Fajo  
-To pretend	Fingir (finjo, finges, finge, fingimos, fingís, fingen)
-Shred	Jirón  
-Bite	Mordida  
-Face	Mueca  
-Optional	Optativo  
-To swarm	Pulular (pululo, pululas, pulula, pululamos, pululáis, pululan)
-Corner of one's eye	Rabillo del ojo  
-To travel around	Recorrer (recorro, recorres, recorre, recorremos, recorréis, recorren)
-To whisper	Susurrar (susurro, susurras, susurra, susurramos, susurráis, susurran)
-Wobbly	Tambaleante  
-To hum	Tararear (tarareo, tarareas, tararea, tarareamos, tarareáis, tararean)
-To run into	Toparse (me topo, te topas, se topa, nos topamos, os topáis, se topan)
+Submissive	Agachado (adjective)  
+>>>manually check defination on https://www.spanishdict.com/translate/al%20unisono please.<<<	Al unisono (None)  
+To pile up	Amontonarse (pronominal verb) (me amontono, te amontonas, se amontona, nos amontonamos, os amontonáis, se amontonan)
+Predicament	Aprieto (masculine noun)  
+To stammer	Balbucear (intransitive verb) (balbuceo, balbuceas, balbucea, balbuceamos, balbuceáis, balbucean)
+To boil	Bullir (intransitive verb) (bullo, bulles, bulle, bullimos, bullís, bullen)
+Heavyset	Corpulento (adjective)  
+To weaken	Debilitar (transitive verb) (debilito, debilitas, debilita, debilitamos, debilitáis, debilitan)
+To hide	Disimular (transitive verb) (disimulo, disimulas, disimula, disimulamos, disimuláis, disimulan)
+To rehearse	Ensayar (transitive verb) (ensayo, ensayas, ensaya, ensayamos, ensayáis, ensayan)
+To scrutinize	Escudriñar (transitive verb) (escudriño, escudriñas, escudriña, escudriñamos, escudriñáis, escudriñan)
+Wad	Fajo (masculine noun)  
+To pretend	Fingir (transitive verb) (finjo, finges, finge, fingimos, fingís, fingen)
+Shred	Jirón (masculine noun)  
+Bite	Mordida (feminine noun)  
+Face	Mueca (feminine noun)  
+Optional	Optativo (adjective)  
+To swarm	Pulular (intransitive verb) (pululo, pululas, pulula, pululamos, pululáis, pululan)
+Corner of one's eye	Rabillo del ojo (masculine noun)  
+To travel around	Recorrer (transitive verb) (recorro, recorres, recorre, recorremos, recorréis, recorren)
+To whisper	Susurrar (intransitive verb) (susurro, susurras, susurra, susurramos, susurráis, susurran)
+Wobbly	Tambaleante (adjective)  
+To hum	Tararear (transitive verb) (tarareo, tarareas, tararea, tarareamos, tarareáis, tararean)
+To run into	Toparse (pronominal verb) (me topo, te topas, se topa, nos topamos, os topáis, se topan)

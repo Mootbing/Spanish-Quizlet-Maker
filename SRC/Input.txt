@@ -1,24 +1,24 @@
-adj agachado
-adv al unisono
-v amontonarse
-m aprieto
-v balbucear
-v bullir
-adj corpulento
-adj debilitado
-v disimular
-v ensayar
-v escudrinar
-m fajo
-v fingir
-m jiron
-f mordida
-f mueca
-adj optativo
-v pulular
-m rabillo del ojo
-v recorrer
-v susurrar
-adj tambaleante
-v tararear
-v toparse
+agachado
+al unisono
+amontonarse
+aprieto
+balbucear
+bullir
+corpulento
+debilitado
+disimular
+ensayar
+escudrinar
+fajo
+fingir
+jiron
+mordida
+mueca
+optativo
+pulular
+rabillo del ojo
+recorrer
+susurrar
+tambaleante
+tararear
+toparse
