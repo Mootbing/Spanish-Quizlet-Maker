@@ -25,6 +25,7 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
 
     #bs4 bs
     URLResult = requests.get(URL)
+    #print(URLResult.content)
     Soup = BeautifulSoup(URLResult.content, "html.parser")
 
     #Get correct word from site with accents and tildes
@@ -35,7 +36,7 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
 
     #Get parts of speech
     if PartsOfSpeech == "":
-        PartsOfSpeech = Soup.find("a", attrs={"class":"_2VBIE8Jw"})
+        PartsOfSpeech = Soup.find("a", attrs={"class":"href--2VBIE8Jw"})
 
         if PartsOfSpeech is not None:
             PartsOfSpeech = re.sub("""(<.*">)|(</.*>)""", "", str(PartsOfSpeech))
@@ -46,19 +47,25 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
         else:
             PartsOfSpeech = "Phrase/No POS"
 
-    Conjugations = [[[] for _ in range(5)] for _ in range(6)]
-    #If conjugatable, specify conjugations too
-    if LinkBase == LinkConj:
-        i = 0
-        for Conjugation in Soup.find_all("a", attrs={"class":"_3Le9u96E _2cyjHi0d _1zVoo-wU y9F9itDZ"}):
+    Conjugations = {}
+    Table = Soup.find("table", attrs={"class" : "vtable--2WLTGmgs"})
+    if Table:
+        Section = ""
+        for i in Table.find_all("td"):
+            Conjugated = "".join([x[2:-1] for x in re.findall("\">[a-zÀ-ú\/\.U]+<", str(i))])
 
-            RidFront = re.sub('''<a.*aria-label="''', "", str(Conjugation))
-            RidBack = re.sub('''".*>''', "", RidFront)
+            if Conjugated == "":
+                continue
 
-            if not re.match("(<|>)", RidBack):
-                i += 1
-                Conjugations[albreto.floor(i / 30)][i % 5].append(RidBack)
-                #change 30 and 5 for others ">
+            if Conjugated in ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]:
+                Section = Conjugated
+                Conjugations[Section] = []
+                continue
+
+            #print(Section)
+            #print(Conjugated)
+
+            Conjugations[Section].append(Conjugated)
 
     #Get defination
     Defination = Soup.find("div", attrs={"id":"quickdef1-es"})
@@ -68,8 +75,13 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
     if Defination == "None":
         Defination = f">>>Manually check defination on {URL} please.<<<"
         
-    CondensedConj = f"({', '.join(Conjugations[0][1])})" if Conjugations[0][1] != [] else " "    
-    
+    CondensedConj = "("
+    for Conjugation in Conjugations:
+        CondensedConj += f"""{Conjugation} form: {", ".join(Conjugations[Conjugation])}"""
+    CondensedConj += ")"
+
+    CondensedConj = "" if CondensedConj == "()" else CondensedConj
+
     return f"{Defination.capitalize()}\t{Word.capitalize()} ({PartsOfSpeech}) {CondensedConj}\n" #flip def and word so spanish is with spanish
 
 for Word in Words:
