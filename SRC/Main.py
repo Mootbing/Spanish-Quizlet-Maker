@@ -9,10 +9,10 @@ LinkConj = "https://www.spanishdict.com/conjugate/"
 LinkDef = "https://www.spanishdict.com/translate/"
 Words = []
 
-with open(os.path.dirname(os.path.realpath(__file__)) + "/Output.txt", "w+") as File:
+with open(os.path.dirname(os.path.realpath(__file__)) + "/Output.txt", "w+", encoding="utf-8") as File:
     File.write("")
 
-with open(os.path.dirname(os.path.realpath(__file__)) + "/Input.txt", "r") as File:
+with open(os.path.dirname(os.path.realpath(__file__)) + "/Input.txt", "r", encoding="utf-8") as File:
     Words = [Word.strip("\n") for Word in File.readlines()]
 
 def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
@@ -76,11 +76,12 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
         Defination = f">>>Manually check defination on {URL} please.<<<"
         
     CondensedConj = "("
-    for Conjugation in Conjugations:
-        CondensedConj += f"""{Conjugation} form: {", ".join(Conjugations[Conjugation])}"""
-    CondensedConj += ")"
 
-    CondensedConj = "" if CondensedConj == "()" else CondensedConj
+    for Conjugation in Conjugations:
+        CondensedConj += f"""{Conjugation} form: {", ".join(Conjugations[Conjugation])} | """
+    CondensedConj = CondensedConj[:-3] + ")"
+
+    CondensedConj = "" if CondensedConj == ")" else CondensedConj
 
     return f"{Defination.capitalize()}\t{Word.capitalize()} ({PartsOfSpeech}) {CondensedConj}\n" #flip def and word so spanish is with spanish
 
