@@ -36,7 +36,7 @@ def Define(Word, LinkBase = LinkDef, PartsOfSpeech = "") -> str:
 
     #Get parts of speech
     if PartsOfSpeech == "":
-        PartsOfSpeech = Soup.find("a", attrs={"class":"href--2VBIE8Jw"})
+        PartsOfSpeech = Soup.find("a", attrs={"class":"_2VBIE8Jw"})
 
         if PartsOfSpeech is not None:
             PartsOfSpeech = re.sub("""(<.*">)|(</.*>)""", "", str(PartsOfSpeech))
